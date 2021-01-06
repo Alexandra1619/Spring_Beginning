@@ -15,7 +15,9 @@ public class MusicPlayer {
 
     public void PlayMusicList()
     {
-        System.out.println(musicList.get(0).getSong()+" "+musicList.get(1).getSong()+" "+musicList.get(2).getSong());
+        for (Music music:musicList) {
+            System.out.println(music.getSong());
+        }
 
     }
 }
